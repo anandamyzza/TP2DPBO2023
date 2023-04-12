@@ -14,6 +14,12 @@ Buatlah program Java yang terkoneksi dengan database MySQL. Berikut spesifikasi 
 * Boleh login dan/atau register. Tidak perlu ada enkripsi password
 
 ## Desain Program
+#### UML
+![UML drawio (7)](https://user-images.githubusercontent.com/100767177/231526157-f21a8488-9967-4f4f-a518-40af536d7c4d.png)
+
+#### ERD
+![image](https://user-images.githubusercontent.com/100767177/231526273-353f928d-997b-4710-bdd7-551de1c47239.png)
+
 Terdapat 9 class di program ini, yaitu:
 1. **Login** merupakan class yang berfungsi agar user dapat memasuki program yang dibuat. User membutuhkan autentikasi akun dengan memasukan username dan password pada text field yang disediakan, jika username dan password terdaftar dalam database, maka user bisa memasuki program yang dibuat. Setelah user melakukan login, user akan dihadapkan menuju halaman utama (Mainframe).
 2. **AlbumPanel** merupakan class JPanel utama (Mainframe) yang akan menampilkan data-data album dan artis yang ditampilkan menggunakan card. Terdapat 3 tombol navigasi, yaitu tombol Album (Tombol yang akan menampilkan daftar album), tombol Artist (Tombol yang akan menampilkan daftar artist), dan tombol Logout (Tombol untuk keluar dari halaman utama dan kembali ke halaman login). Lalu terdapat 2 tombol yang menampilkan form untuk menambahkan data Album dan Artist, yaitu tombol Add Album dan Add Artist. Proses navigasi dari Album ke Artist dan sebaliknya menggunakan prosedur bernama setPanelAlbum() dan setPanelArtist(). _Note: Class ini seharusnya dinamakan Mainframe, namun karena ketidakpahaman diawal pengerjaan tugas, sehingga nama file salah dinamakan dan tidak bisa di rename._
@@ -27,20 +33,28 @@ Terdapat 9 class di program ini, yaitu:
 
 ### Desain GUI
 * Halaman Login
+
 ![image](https://user-images.githubusercontent.com/100767177/231518434-4f43c8ef-9bb2-4fe9-9328-85332ea22cab.png)
 * Mainframe
+
 ![image](https://user-images.githubusercontent.com/100767177/231518506-0194bf35-e232-497a-bda3-f5c50b3ed56c.png)
 * Album Card
+
 ![image](https://user-images.githubusercontent.com/100767177/231518560-8f40e161-476f-4351-9633-d49fc01457c8.png)
 * Artist Card
+
 ![image](https://user-images.githubusercontent.com/100767177/231518604-4237c7fb-5f86-4dd2-9691-162626e0386e.png)
 * Add Album
+
 ![image](https://user-images.githubusercontent.com/100767177/231518669-fefaedc6-7b47-43b7-861c-0c19eb808973.png)
 * Add Artist
+
 ![image](https://user-images.githubusercontent.com/100767177/231518730-9526a260-6020-44c2-b6e2-3e4e9ddba393.png)
 * Update Album
+
 ![image](https://user-images.githubusercontent.com/100767177/231518799-fba59345-8612-4bf4-b6cb-901b9ae8929c.png)
 * Update Artist
+
 ![image](https://user-images.githubusercontent.com/100767177/231518865-ddd51406-a6a8-4e74-a99e-5d239047bd83.png)
 
 ## Alur Program
